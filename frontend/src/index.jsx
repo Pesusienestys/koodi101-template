@@ -3,7 +3,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
-var lol = "possu possu"
+var lol = "possu"
 
 import './assets/stylesheets/style.css'
 
