@@ -9,7 +9,7 @@ import time
 def readSensors():
     sensors = {
         #"temperature": envirophat.weather.temperature(),
-        "pressure": envirophat.weather.pressure(),
+        "pressure": envirophat.weather.pressure()
         #"eu": "bbbbbbbbbbbbbbbbbbbbbbbbbb"
     }
 
