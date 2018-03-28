@@ -11,7 +11,7 @@ def readSensors():
         "temperature": envirophat.weather.temperature(),
         "pressure": envirophat.weather.pressure()
     }
-
+    sensors = str(sensors)
     sensors = '"' + sensors + '"'
 
     return sensors 
