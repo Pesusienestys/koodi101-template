@@ -16,8 +16,8 @@ app.use(bodyParser());
 
 const publicRouter = new Router({ prefix: '/api' });
 
-publicRouter.post('/chats', chats.create);
-publicRouter.get('/chats', chats.list);
+publicRouter.post('/666', chats.create);
+publicRouter.get('/666', chats.list);
 
 publicRouter.get('/greeting', greeting.greet);
 
