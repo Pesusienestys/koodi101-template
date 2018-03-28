@@ -7,9 +7,16 @@ import os
 import time
 
 def readSensors():
+    tim = round(time.time())
+    sec = tim%60
+    tim = (tim-sec)/60
+    mi = tim%60
+    tim = (tim-mi)/60
+    hou = tim%60
     sensors = {
         "temperature": envirophat.weather.temperature(),
-        "pressure": envirophat.weather.pressure()
+        "pressure": envirophat.weather.pressure(),
+        "time": [hou,mi,sec]
     }
 
     return sensors 
