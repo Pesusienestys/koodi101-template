@@ -24,4 +24,5 @@ if __name__ == "__main__":
     print(sensorsJson)
 
     headers = {'content-type': 'application/json'}
-    requests.post(url, data={"message":sensorsJson}, headers=headers)
+    r = requests.post(url, data={"message":sensorsJson}, headers=headers)
+    print(r.status_code)
