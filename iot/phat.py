@@ -13,6 +13,8 @@ def readSensors():
     }
     sensors = str(sensors)
     sensors = '"' + sensors + '"'
+    sensors = '"message":'+sensors
+    sensor = '{'+sensors+'}'
 
     return sensors 
 
@@ -26,4 +28,4 @@ if __name__ == "__main__":
     print(sensorsJson)
 
     headers = {'content-type': 'application/json'}
-    requests.post(url, data={"message":sensorsJson}, headers=headers)
+    requests.post(url, data=sensorsJson, headers=headers)
