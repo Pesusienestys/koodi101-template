@@ -12,6 +12,8 @@ def readSensors():
         "pressure": envirophat.weather.pressure()
     }
 
+    sensors = '"' + sensors + '"'
+
     return sensors 
 
 if __name__ == "__main__":
@@ -24,4 +26,4 @@ if __name__ == "__main__":
     print(sensorsJson)
 
     headers = {'content-type': 'application/json'}
-    requests.post(url, data=sensorsJson, headers=headers)
+    requests.post(url, data={"message":sensorsJson}, headers=headers)
