@@ -18,11 +18,11 @@ if __name__ == "__main__":
     url = os.environ["ENDPOINT"]
     print(url)
 
-    sensorsJson = json.dumps(readSensors(), sort_keys=True, indent=2)
+    sensorsJson = json.dumps(readSensors(), indent=2)
 
     print("------")
     print(sensorsJson)
 
     headers = {'content-type': 'application/json'}
-    r = requests.post(url, data={"message":sensorsJson}, headers=headers)
+    r = requests.post(url, data=sensorsJson, headers=headers)
     print(r.status_code)
