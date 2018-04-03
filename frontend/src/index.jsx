@@ -17,8 +17,7 @@ const getGreetingFromBackend = async () => {
     console.log("Getting chat from "+url)
     const response = await fetch(url);
     const shit = await response.json()
-    console.log(shit)
-    return shit
+    return shit['greeting']
   } catch (error) {
     console.error(error);
   }
@@ -42,8 +41,7 @@ class App extends Component {
 
   async componentWillMount() {
     const response = await getGreetingFromBackend();
-    this.setState({chat: response.chat});
-    console.log(response.chat)
+    this.setState({chat: response});
   }
 
   render() {
