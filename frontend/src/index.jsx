@@ -41,6 +41,7 @@ class App extends Component {
   async componentWillMount() {
     const response = await getGreetingFromBackend();
     this.setState({chat: response.chat});
+    console.log(response.chat)
   }
 
   render() {
