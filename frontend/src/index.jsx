@@ -26,7 +26,7 @@ const getGreetingFromBackend = async () => {
 
 
 const BackendGreeting = (props) => (
-  <div><p>Backend says: {props.chat}</p></div>
+  <div><h1>Sää on: {props.chat}</h1></div>
 );
 
 
