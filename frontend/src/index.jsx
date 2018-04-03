@@ -24,6 +24,18 @@ const getGreetingFromBackend = async () => {
   return { chat :"Could not get chat from backend"};
 };
 
+const getTempFromBackend = async () => {
+  try {
+    const url = `${baseURL}/api/chats`
+    console.log("Getting chat from "+url)
+    const response = await fetch(url);
+    console.log(response)
+  } catch (error) {
+    console.error(error);
+  }
+  return { chat :"Could not get chat from backend"};
+};
+
 
 const BackendGreeting = (props) => (
   <div><h1>Sää on {props.chat}.</h1></div>
@@ -48,7 +60,7 @@ class App extends Component {
 
     return (
       <BackendGreeting chat={this.state.chat} />
-
+      document.getElementById("ismo").innerHTML=Ismo
     );
   }
 }
