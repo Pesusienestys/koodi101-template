@@ -60,7 +60,7 @@ class App extends Component {
 
     return (
       <BackendGreeting chat={this.state.chat} />,
-      document.getElementById("ismo").innerHTML="Ismo"
+      document.getElementById("ismo").innerHTML=""
     );
   }
 }
