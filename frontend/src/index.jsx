@@ -13,10 +13,9 @@ const baseURL = "http://195.201.28.133:9000";
 
 const getGreetingFromBackend = async () => {
   try {
-    const url = `${baseURL}/api/chats`
+    const url = `${baseURL}/api/greeting`
     console.log("Getting chat from "+url)
     const response = await fetch(url);
-    console.log(response)
     return response.json()
   } catch (error) {
     console.error(error);
