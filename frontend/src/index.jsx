@@ -18,7 +18,7 @@ const getGreetingFromBackend = async () => {
     const response = await fetch(url);
     const shit = await response.json()
     console.log(shit)
-    return response.json()
+    return shit
   } catch (error) {
     console.error(error);
   }
