@@ -16,7 +16,7 @@ exports.list = async (ctx) => {
 exports.create = async (ctx) => {
   const params = ctx.request.body;
 
-  const chat = await database.Chat.create({temperature: params.temperature});
+  const chat = await database.Chat.replace({temperature: params.temperature});
 
   ctx.body = await chat.toJSON();
   ctx.status = 201;
