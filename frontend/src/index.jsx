@@ -47,7 +47,8 @@ class App extends Component {
   render() {
 
     return (
-      <BackendGreeting chat={this.state.chat} />
+      <BackendGreeting chat={this.state.chat} />, 
+      <p>moi</p>
     );
   }
 }
