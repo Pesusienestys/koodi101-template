@@ -67,6 +67,5 @@ class App extends Component {
 
 ReactDOM.render(
   <App />,
-  document.getElementById('root'),
-  <p>moi</p>
+  document.getElementById('root')
 );
