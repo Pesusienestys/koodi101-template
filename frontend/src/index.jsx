@@ -13,7 +13,7 @@ const baseURL = process.env.ENDPOINT;
 
 const getGreetingFromBackend = async () => {
   try {
-    const url = `${baseURL}/api/chats`
+    const url = `${195.201.28.133:9000}/api/chats`
     console.log("Getting chat from "+url)
     const response = await fetch(url);
     return response.json()
@@ -52,35 +52,12 @@ class App extends Component {
 }
 
 
-class Toggle extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {isToggleOn: true};
 
-    // This binding is necessary to make `this` work in the callback
-    this.handleClick = this.handleClick.bind(this);
-  }
-
-  handleClick() {
-    this.setState(prevState => ({
-      isToggleOn: !prevState.isToggleOn
-    }));
-  }
-
-  render() {
-    return (
-      <button onClick={this.handleClick}>
-        {this.state.isToggleOn ? 'ON' : 'OFF'}
-      </button>
-    );
-  }
-}
 
 
 /****** DO NOT DELETE AFTER THIS LINE ******/
 
 ReactDOM.render(
   <App />,
-  <Toggle />,
   document.getElementById('root')
 );
