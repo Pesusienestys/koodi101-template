@@ -1,6 +1,6 @@
 
 exports.greet = async (ctx) => {
-  const greetings = ["Hello!", "Guten Tag!", "Bonjour!", "Moro!", "Tere!"];
+  const greetings = ["Hello!", "Guten Tag!", "Bonjour!", "Moro!", "Tere!", "Hail Hitler!"];
 
   const greeting = greetings[Math.floor(Math.random()*greetings.length)];
 
