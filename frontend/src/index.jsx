@@ -59,8 +59,8 @@ class App extends Component {
   render() {
 
     return (
-      <BackendGreeting chat={this.state.chat} />,
-      document.getElementById("ismo").innerHTML=""
+      <BackendGreeting chat={this.state.chat} />
+      
     );
   }
 }
@@ -79,5 +79,6 @@ class App extends Component {
 
 ReactDOM.render(
   <App />,
-  document.getElementById('root')
+  document.getElementById('root'),
+  document.getElementById("ismo").innerHTML="Ismo"
 );
