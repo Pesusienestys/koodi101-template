@@ -30,8 +30,8 @@ const getTempFromBackend = async () => {
     console.log("Getting chat from "+url)
     const response2 = await fetch(url);
     const shit2 = response2.json()
-    const shit21 = shit2{shit2.length-1};
-    console.log(shit21)
+    const shit21 = shit2[shit2.length-1];
+    console.log(shit2)
   } catch (error) {
     console.error(error);
   }
