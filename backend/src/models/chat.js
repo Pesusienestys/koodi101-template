@@ -2,7 +2,6 @@ var Sequelize = require('sequelize');
 var sequelize = require('./sequelize');
 
 var ChatMessage = sequelize.define('chats', {
-  pressure: Sequelize.FLOAT,
   temperature: Sequelize.FLOAT,
 }, {
   timestamps: true,
@@ -13,7 +12,6 @@ var ChatMessage = sequelize.define('chats', {
         id: this.id,
         // This also comes for free
         createdAt: this.createdAt,
-        pressure: this.pressure,
         temperature: this.temperature
       };
     },
