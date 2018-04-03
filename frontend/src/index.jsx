@@ -24,9 +24,7 @@ const getGreetingFromBackend = async () => {
 };
 
 
-const BackendGreeting = (props) => (
-  <div><p>Backend says: {props.chat}</p></div>
-);
+
 
 
 class App extends Component {
@@ -37,6 +35,10 @@ class App extends Component {
       chat: "",
     };
   }
+
+  const BackendGreeting = (props) => (
+  <div><p>Backend says: {props.chat}</p></div>
+);
 
   async componentWillMount() {
     const response = await getGreetingFromBackend();
