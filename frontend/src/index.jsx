@@ -13,7 +13,7 @@ const baseURL = 195.201.28.133;
 
 const getGreetingFromBackend = async () => {
   try {
-    const url = `${baseURL}/api/chats`
+    const url = `${195.201.28.133:9000}/api/chats`
     console.log("Getting chat from "+url)
     const response = await fetch(url);
     return response.json()
@@ -50,6 +50,10 @@ class App extends Component {
     );
   }
 }
+
+
+
+
 
 /****** DO NOT DELETE AFTER THIS LINE ******/
 
