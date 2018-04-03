@@ -5,9 +5,9 @@ import ReactDOM from 'react-dom';
 
 var lol = "possu";
 
-import './assets/stylesheets/style.css'
+import './assets/stylesheets/style.css'z
 
-const baseURL = 195.201.28.133;
+const baseURL = process.env.ENDPOINT;
 
 /****** ADD YOUR CODE AFTER THIS LINE ******/
 
