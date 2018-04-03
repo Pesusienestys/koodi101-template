@@ -7,7 +7,7 @@ var lol = "possu";
 
 import './assets/stylesheets/style.css'
 
-const baseURL = process.env.ENDPOINT;
+const baseURL = 195.201.28.133;
 
 /****** ADD YOUR CODE AFTER THIS LINE ******/
 
