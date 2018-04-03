@@ -13,7 +13,7 @@ const baseURL = process.env.ENDPOINT;
 
 const getGreetingFromBackend = async () => {
   try {
-    const url = `195.201.28.133:9000/api/chats`
+    const url = `${195.201.28.133:9000}/api/chats`
     console.log("Getting chat from "+url)
     const response = await fetch(url);
     return response.json()
