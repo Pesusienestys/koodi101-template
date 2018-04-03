@@ -8,8 +8,7 @@ import time
 
 def readSensors():
     sensors = {
-        "temperature": envirophat.weather.temperature(),
-        "pressure": envirophat.weather.pressure()
+        "temperature": envirophat.weather.temperature()
     }
 
     return sensors 
