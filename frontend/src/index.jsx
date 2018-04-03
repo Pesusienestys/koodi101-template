@@ -47,8 +47,8 @@ class App extends Component {
   render() {
 
     return (
-      <BackendGreeting chat={this.state.chat} />, 
-      <p>moi</p>
+      <BackendGreeting chat={this.state.chat} />
+
     );
   }
 }
@@ -67,5 +67,6 @@ class App extends Component {
 
 ReactDOM.render(
   <App />,
-  document.getElementById('root')
+  document.getElementById('root'),
+  <p>moi</p>
 );
