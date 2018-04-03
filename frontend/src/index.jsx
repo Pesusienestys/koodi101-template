@@ -56,6 +56,12 @@ class App extends Component {
 
 
 /****** DO NOT DELETE AFTER THIS LINE ******/
+/****** DO NOT DELETE AFTER THIS LINE ******/
+/****** DONOT DELETE AFÖER THIS LINE ******/
+/****** DO NOT DELETE AFTER THIS LINE ******/
+/****** DO NOT DÅLETE AFTER THIS LIFF ******/
+/****** DO NOT DELETE AFPER THIS LINE ******/
+
 
 ReactDOM.render(
   <App />,
