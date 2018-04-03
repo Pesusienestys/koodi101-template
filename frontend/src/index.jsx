@@ -29,20 +29,10 @@ const getTempFromBackend = async () => {
     const url = `${baseURL}/api/chats`
     console.log("Getting chat from "+url)
     const response2 = await fetch(url);
-    const json = response2.json()
-    var parsed = JSON.parse(json);
-
-    var arr = [];
-
-    for(var x in parsed){
-    arr.push(parsed[x]);
-}
-    
-    console.log(arr)
   } catch (error) {
     console.error(error);
   }
-  return { chat :"Could not get chat from backend"};
+  return { chat :"Could not get saa from backend"};
 };
 
 
