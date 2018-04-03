@@ -16,9 +16,6 @@ exports.list = async (ctx) => {
 exports.create = async (ctx) => {
   const params = ctx.request.body;
 
-  var vanha = File(/koodi101-template/backend/db/chat.sqlite);
-  vanha.remove();
-
   const chat = await database.Chat.create({pressure: params.pressure, temperature: params.temperature});
 
   ctx.body = await chat.toJSON();
