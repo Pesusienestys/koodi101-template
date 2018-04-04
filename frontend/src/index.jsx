@@ -29,7 +29,7 @@ const getTempFromBackend = async () => {
     const url = `${baseURL}/api/chats`
     console.log("Getting chat from "+url)
     const response2 = await fetch(url);
-    const shit2 = response2.json()
+    const shit2 = await response2.json()
     console.log(shit2.results)
     console.log(shit2)
     return shit2.results
