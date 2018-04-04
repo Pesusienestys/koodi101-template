@@ -14,30 +14,29 @@ const baseURL = "http://195.201.28.133:9000";
 const getGreetingFromBackend = async () => {
   try {
     const url = `${baseURL}/api/greeting`
-    console.log("Getting chat from "+url)
+    console.log("Getting greeting from "+url)
     const response = await fetch(url);
     const shit = await response.json()
     return shit['greeting']
   } catch (error) {
     console.error(error);
   }
-  return { chat :"Could not get chat from backend"};
+  return { chat :"Could not get greeting from backend"};
 };
 
 const getTempFromBackend = async () => {
   try {
     const url = `${baseURL}/api/chats`
-    console.log("Getting chat from "+url)
+    console.log("Getting temperature from "+url)
     const response2 = await fetch(url);
     const shit2 = await response2.json()
     const shit21 = await shit2.results
     const shitray = await shit21.slice(Math.max(shit21.length - 1, 0))
-    console.log(await Math.round(shitray[0].temperature*10)/10)
     return await Math.round(shitray[0].temperature*10)/10
   } catch (error) {
     console.error(error);
   }
-  return { chat :"Could not get saa from backend"};
+  return { chat :"Could not get temperature from backend"};
 };
 
 
