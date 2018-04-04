@@ -27,3 +27,7 @@ h2 {
 	font-family: "Comic Sans MS", "Comic Sans", cursive;
 	color: darkgreen;
 }
+
+#kuva {
+	align-items: center;
+}
