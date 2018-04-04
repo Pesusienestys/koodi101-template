@@ -31,7 +31,8 @@ const getTempFromBackend = async () => {
     const response2 = await fetch(url);
     const shit2 = await response2.json()
     const shit21 = await shit2.results
-    console.log(shit21)
+    array = shit21[shit21.length-1]
+    console.log(array)
     return shit2.results
   } catch (error) {
     console.error(error);
