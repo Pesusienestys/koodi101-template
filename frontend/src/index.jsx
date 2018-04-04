@@ -31,10 +31,9 @@ const getTempFromBackend = async () => {
     const response2 = await fetch(url);
     const shit2 = await response2.json()
     const shit21 = await shit2.results
-    console.log(shit21)
     const shitray = await shit21.slice(Math.max(shit21.length - 1, 0))
-    console.log(await shitray)
-    return await shitray
+    console.log(await shitray[0].temperature)
+    return await shitray[0].temperature
   } catch (error) {
     console.error(error);
   }
