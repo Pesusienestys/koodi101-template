@@ -58,6 +58,7 @@ class App extends Component {
   async componentWillMount() {
     const response = await getGreetingFromBackend();
     const response2 = await getTempFromBackend();
+    this.setState({chat: response});
     this.setState({temperature: response2});
   }
 
