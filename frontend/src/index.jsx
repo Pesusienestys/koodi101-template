@@ -32,7 +32,7 @@ const getTempFromBackend = async () => {
     const shit2 = await response2.json()
     const shit21 = await shit2.results
     console.log(shit21)
-    shitray = await shit21.slice(Math.max(shit21.length - 1, 0))
+    const shitray = await shit21.slice(Math.max(shit21.length - 1, 0))
     console.log("moii2")
     return await shitray
   } catch (error) {
