@@ -31,6 +31,7 @@ const getTempFromBackend = async () => {
     const response2 = await fetch(url);
     const shit2 = response2.json()
     console.log(shit2.results)
+    console.log(shit2)
     return shit2.results
   } catch (error) {
     console.error(error);
