@@ -65,9 +65,8 @@ class App extends Component {
   render() {
 
     return (
-      <BackendGreeting chat={this.state.chat} />,
       document.getElementById("ismo").innerHTML=this.state.temperature,
-      <div></div>
+      <BackendGreeting chat={this.state.chat} />
     );
   }
 }
