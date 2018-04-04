@@ -51,21 +51,21 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      chat: "",
+      temperature: "",
     };
   }
 
   async componentWillMount() {
     const response = await getGreetingFromBackend();
     const response2 = await getTempFromBackend();
-    this.setState({chat: response});
+    this.setState({temperature: response2});
   }
 
   render() {
 
     return (
       <BackendGreeting chat={this.state.chat} />,
-      document.getElementById("ismo").innerHTML="Ismo",
+      document.getElementById("ismo").innerHTML=this.state.temperature,
       <div></div>
     );
   }
